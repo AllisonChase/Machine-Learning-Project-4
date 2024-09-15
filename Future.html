@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>Old Data</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -44,8 +44,8 @@
 <div class="w3-top">
  <div class="w3-bar w3-theme-d2 w3-left-align">
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
-  <!-- Updated href attributes for linking to HTML files -->
+  <!-- Updated Home tab to link to SiteTemplate.html -->
+  <a href="SiteTemplate.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
   <a href="Old Data.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Old Data</a>
   <a href="Cleaning.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Cleaning</a>
   <a href="Training.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Training</a>
@@ -55,7 +55,7 @@
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <!-- Updated href attributes for small screens -->
+    <a href="SiteTemplate.html" class="w3-bar-item w3-button">Home</a> <!-- Updated link -->
     <a href="Old Data.html" class="w3-bar-item w3-button">Old Data</a>
     <a href="Cleaning.html" class="w3-bar-item w3-button">Cleaning</a>
     <a href="Training.html" class="w3-bar-item w3-button">Training</a>
@@ -64,45 +64,31 @@
   </div>
 </div>
 
-<!-- Image Header -->
-<div class="w3-display-container w3-animate-opacity">
-  <img src="Pictures/nursing-home-illustration-vector.jpg" alt="boat" style="width:100%;">
-</div>
-
-<!-- Team Container -->
+<!-- BLANK HEADLINE Section -->
 <div class="w3-container w3-padding-64 w3-center" id="team">
-  <h2>OUR TEAM</h2>
-  <p>Meet the team!:</p>
-
-  <div class="team-container">
-    <div class="team-member">
-      <img src="Pictures/avatar 1.png" alt="Matthew" class="w3-circle w3-hover-opacity">
-      <h3>Matthew</h3>
-      <p>Broseph</p>
+  <h2>BLANK HEADLINE</h2>
+  
+  <!-- Slideshow -->
+  <div class="w3-content w3-section" style="max-width:500px">
+    <div class="w3-display-container mySlides">
+      <img src="img_snowtops.jpg" style="width:100%">
+      <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+        French Alps
+      </div>
     </div>
 
-    <div class="team-member">
-      <img src="Pictures/avatar2.png" alt="James" class="w3-circle w3-hover-opacity">
-      <h3>James</h3>
-      <p>Mojo Brojo</p>
+    <div class="w3-display-container mySlides">
+      <img src="img_lights.jpg" style="width:100%">
+      <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+        Northern Lights
+      </div>
     </div>
 
-    <div class="team-member">
-      <img src="Pictures/avatar3.png" alt="Allison" class="w3-circle w3-hover-opacity">
-      <h3>Allison</h3>
-      <p>Angelina Brolie</p>
-    </div>
-
-    <div class="team-member">
-      <img src="Pictures/avatar4.png" alt="Ellis" class="w3-circle w3-hover-opacity">
-      <h3>Ellis</h3>
-      <p>Brofessor</p>
-    </div>
-
-    <div class="team-member">
-      <img src="Pictures/avatar5.png" alt="John" class="w3-circle w3-hover-opacity">
-      <h3>John</h3>
-      <p>Han Brolo</p>
+    <div class="w3-display-container mySlides">
+      <img src="img_mountains.jpg" style="width:100%">
+      <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+        Rocky Mountains
+      </div>
     </div>
   </div>
 </div>
@@ -115,12 +101,8 @@
   </div>
 </div>
 
-<!-- Image of location/map -->
-<img src="Pictures/nursing-home-illustration-vector.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
-
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-
   <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
     <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
     <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
@@ -147,8 +129,23 @@ function openNav() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 3 seconds
+}
 </script>
 
 </body>
 </html>
-

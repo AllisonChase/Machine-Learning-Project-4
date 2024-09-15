@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>Old Data</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -24,6 +24,42 @@
   .work-container {
     text-align: center;
   }
+  /* Increase the size of the slideshow */
+  .w3-content {
+    max-width: 1000px; /* Twice the original size */
+    position: relative;
+    margin: auto;
+  }
+  .mySlides {
+    display: none;
+    width: 100%;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  }
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
 </style>
 </head>
 <body id="myPage">
@@ -44,8 +80,8 @@
 <div class="w3-top">
  <div class="w3-bar w3-theme-d2 w3-left-align">
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
-  <!-- Updated href attributes for linking to HTML files -->
+  <!-- Updated Home tab to link to SiteTemplate.html -->
+  <a href="SiteTemplate.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
   <a href="Old Data.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Old Data</a>
   <a href="Cleaning.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Cleaning</a>
   <a href="Training.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Training</a>
@@ -55,7 +91,7 @@
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <!-- Updated href attributes for small screens -->
+    <a href="SiteTemplate.html" class="w3-bar-item w3-button">Home</a> <!-- Updated link -->
     <a href="Old Data.html" class="w3-bar-item w3-button">Old Data</a>
     <a href="Cleaning.html" class="w3-bar-item w3-button">Cleaning</a>
     <a href="Training.html" class="w3-bar-item w3-button">Training</a>
@@ -64,45 +100,40 @@
   </div>
 </div>
 
-<!-- Image Header -->
-<div class="w3-display-container w3-animate-opacity">
-  <img src="Pictures/nursing-home-illustration-vector.jpg" alt="boat" style="width:100%;">
-</div>
-
-<!-- Team Container -->
+<!-- BLANK HEADLINE Section -->
 <div class="w3-container w3-padding-64 w3-center" id="team">
-  <h2>OUR TEAM</h2>
-  <p>Meet the team!:</p>
-
-  <div class="team-container">
-    <div class="team-member">
-      <img src="Pictures/avatar 1.png" alt="Matthew" class="w3-circle w3-hover-opacity">
-      <h3>Matthew</h3>
-      <p>Broseph</p>
+  <h2>BLANK HEADLINE</h2>
+  
+  <!-- Slideshow -->
+  <div class="w3-content w3-section">
+    <div class="w3-display-container mySlides">
+      <img src="Pictures/scatter_Licensed Practitioner Nurse Staffing vs. Overall 5-Star Rating.png" style="width:100%">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
-    <div class="team-member">
-      <img src="Pictures/avatar2.png" alt="James" class="w3-circle w3-hover-opacity">
-      <h3>James</h3>
-      <p>Mojo Brojo</p>
+    <div class="w3-display-container mySlides">
+      <img src="Pictures/scatter_Nurse Aide Staffing vs. Overall 5-Star Rating.png" style="width:100%">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
-    <div class="team-member">
-      <img src="Pictures/avatar3.png" alt="Allison" class="w3-circle w3-hover-opacity">
-      <h3>Allison</h3>
-      <p>Angelina Brolie</p>
+    <div class="w3-display-container mySlides">
+      <img src="Pictures/scatter_Registered Nurse vs. Overall 5-Star Rating.png" style="width:100%">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
-    <div class="team-member">
-      <img src="Pictures/avatar4.png" alt="Ellis" class="w3-circle w3-hover-opacity">
-      <h3>Ellis</h3>
-      <p>Brofessor</p>
+    <div class="w3-display-container mySlides">
+      <img src="Pictures/scatter_Total Fines ($) vs. Overall 5-Star Rating.png" style="width:100%">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
-    <div class="team-member">
-      <img src="Pictures/avatar5.png" alt="John" class="w3-circle w3-hover-opacity">
-      <h3>John</h3>
-      <p>Han Brolo</p>
+    <div class="w3-display-container mySlides">
+      <img src="Pictures/scatter_Total Weighted Health Score vs. Overall 5-Star Rating.png" style="width:100%">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
   </div>
 </div>
@@ -115,12 +146,8 @@
   </div>
 </div>
 
-<!-- Image of location/map -->
-<img src="Pictures/nursing-home-illustration-vector.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
-
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-
   <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
     <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
     <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
@@ -146,6 +173,27 @@ function openNav() {
   } else { 
     x.className = x.className.replace(" w3-show", "");
   }
+}
+
+// Manual Slideshow controls
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Display the appropriate slide based on the index
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
 }
 </script>
 
