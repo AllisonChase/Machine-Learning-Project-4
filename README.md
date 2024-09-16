@@ -23,3 +23,10 @@ Overall model performance is printed or displayed at the end of the script  in "
 *Running the Presentation Site*
 - Install the VS Code add on "Live Server".
 - Right click (or control click) "SiteTemplate.html" and open the file with Live Server.
+
+### References/Links
+*HTML Creation*
+- Slideshow Feature: https://www.w3schools.com/w3css/w3css_slideshow.asp
+- Website Template: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_website&stacked=h
+
+Xpert Learning Assistant and ChatGPT 4o were used in troubleshooting and enhancing HTML and Python code.
