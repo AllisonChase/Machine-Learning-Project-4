@@ -1,29 +1,32 @@
 # Machine-Learning-Project-4
-## Requirements
-### Data Model Implementation (25 points)
-A Python script initializes, trains, and evaluates a model (10 points)
+# Revisiting Nursing Home Data Set
 
-The data is cleaned, normalized, and standardized prior to modeling (5 points)
+## Project Team Members
+- James Brannan
+- Allison Chase
+- John Haynes
+- Ellis McWhirter
+- Matthew Sanders
 
-The model utilizes data retrieved from SQL or Spark (5 points)
+### Data Model Implementation
+The Python script in "Machine_Learning.ipynb" initializes, trains, and evaluates a model using data from Centers for Medicare & Medicaid Services' data set on nursing home provider information. This data set covers “general information on currently active nursing homes, including number of certified beds, quality measure scores, staffing, and other information in the Five-Star Rating System” in the United States (https://data.cms.gov/provider-data/dataset/4pq5-n9py).
+Our data was cleaned, normalized, and standardized prior to modeling.
+Our model utilizes data retrieved from SQL.
+Our model demonstrated a meaningful predictive power of 79% classification accuracy.
 
-The model demonstrates meaningful predictive power at least 75% classification accuracy or 0.80 R-squared. (5 points)
+### Data Model Optimization
 
-### Data Model Optimization (25 points)
-The model optimization and evaluation process showing iterative changes made to the model and the resulting changes in model performance is documented in either a CSV/Excel table or in the Python script itself (15 points)
+"Data/Model Progression.xlsx" shows iterative changes made to the model and the resulting changes in model performance.
+Overall model performance is printed or displayed at the end of the script  in "Machine_Learning.ipynb".
 
-Overall model performance is printed or displayed at the end of the script (10 points)
+### Group Presentation
+*Running the Presentation Site*
+- Install the VS Code add on "Live Server".
+- Right click (or control click) "SiteTemplate.html" and open the file with Live Server.
 
-### GitHub Documentation (25 points)
-GitHub repository is free of unnecessary files and folders and has an appropriate .gitignore in use (10 points)
+### References/Links
+*HTML Creation*
+- Slideshow Feature: https://www.w3schools.com/w3css/w3css_slideshow.asp
+- Website Template: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_website&stacked=h
 
-The README is customized as a polished presentation of the content of the project (15 points)
-
-### Group Presentation (25 points)
-All group members speak during the presentation. (5 points)
-
-Content, transitions, and conclusions flow smoothly within any time restrictions. (5 points)
-
-The content is relevant to the project. (10 points)
-
-The presentation maintains audience interest. (5 points)
+Xpert Learning Assistant and ChatGPT 4o were used in troubleshooting and enhancing HTML and Python code.
