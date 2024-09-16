@@ -24,15 +24,16 @@
   .work-container {
     text-align: center;
   }
-  /* Increase the size of the slideshow */
+  /* Slideshow container */
   .w3-content {
-    max-width: 1000px; /* Twice the original size */
     position: relative;
     margin: auto;
+    overflow: hidden;
   }
-  .mySlides {
-    display: none;
-    width: 100%;
+  /* Slide images */
+  .mySlides img {
+    width: 100%; /* Make the images fit the container width */
+    height: auto; /* Adjust height according to image aspect ratio */
   }
   .prev, .next {
     cursor: pointer;
@@ -102,36 +103,48 @@
 
 <!-- BLANK HEADLINE Section -->
 <div class="w3-container w3-padding-64 w3-center" id="team">
-  <h2>BLANK HEADLINE</h2>
+  <h2>How we Trained the AI Model</h2>
   
   <!-- Slideshow -->
   <div class="w3-content w3-section">
     <div class="w3-display-container mySlides">
-      <img src="Pictures/scatter_Licensed Practitioner Nurse Staffing vs. Overall 5-Star Rating.png" style="width:100%">
+      <img src="Pictures/1.png" style="width:100%">
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
     <div class="w3-display-container mySlides">
-      <img src="Pictures/scatter_Nurse Aide Staffing vs. Overall 5-Star Rating.png" style="width:100%">
+      <img src="Pictures/2.png" style="width:100%">
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
     <div class="w3-display-container mySlides">
-      <img src="Pictures/scatter_Registered Nurse vs. Overall 5-Star Rating.png" style="width:100%">
+      <img src="Pictures/3.png" style="width:100%">
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
     <div class="w3-display-container mySlides">
-      <img src="Pictures/scatter_Total Fines ($) vs. Overall 5-Star Rating.png" style="width:100%">
+      <img src="Pictures/4.png" style="width:100%">
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
     <div class="w3-display-container mySlides">
-      <img src="Pictures/scatter_Total Weighted Health Score vs. Overall 5-Star Rating.png" style="width:100%">
+      <img src="Pictures/5.png" style="width:100%">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="w3-display-container mySlides">
+      <img src="Pictures/6.png" style="width:100%">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="w3-display-container mySlides">
+      <img src="Pictures/7.png" style="width:100%">
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
@@ -142,7 +155,7 @@
 <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
   <div class="work-container">
     <h2>Our Work</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>The Process of Training the AI model........</p>
   </div>
 </div>
 
@@ -199,4 +212,5 @@ function showSlides(n) {
 
 </body>
 </html>
+
 
