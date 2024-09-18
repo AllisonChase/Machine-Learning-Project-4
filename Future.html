@@ -44,7 +44,7 @@
 <div class="w3-top">
  <div class="w3-bar w3-theme-d2 w3-left-align">
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <!-- Updated Home tab to link to SiteTemplate.html -->
+
   <a href="SiteTemplate.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
   <a href="Old Data.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Old Data</a>
   <a href="Cleaning.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Cleaning</a>
@@ -55,7 +55,7 @@
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="SiteTemplate.html" class="w3-bar-item w3-button">Home</a> <!-- Updated link -->
+    <a href="SiteTemplate.html" class="w3-bar-item w3-button">Home</a>
     <a href="Old Data.html" class="w3-bar-item w3-button">Old Data</a>
     <a href="Cleaning.html" class="w3-bar-item w3-button">Cleaning</a>
     <a href="Training.html" class="w3-bar-item w3-button">Training</a>
@@ -146,7 +146,6 @@ function openNav() {
   }
 }
 
-// Automatic Slideshow - change image every 3 seconds
 var myIndex = 0;
 carousel();
 
@@ -159,7 +158,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 3000); // Change image every 3 seconds
+  setTimeout(carousel, 3000); 
 }
 </script>
 
